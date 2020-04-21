@@ -66,22 +66,11 @@ namespace ImageViewer
                 y = (originalImage.Height - oh) / 2;
             }
 
-            //新建一个bmp图片
             Image bitmap = new System.Drawing.Bitmap(towidth, toheight);
-
-            //新建一个画板
             Graphics g = System.Drawing.Graphics.FromImage(bitmap);
-
-            //设置高质量插值法
             g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.High;
-
-            //设置高质量,低速度呈现平滑程度
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-
-            //清空画布并以透明背景色填充
             g.Clear(Color.Transparent);
-
-            //在指定位置并且按指定大小绘制原图片的指定部分
             g.DrawImage(originalImage, new Rectangle(0, 0, towidth, toheight),
                 new Rectangle(x, y, ow, oh),
                 GraphicsUnit.Pixel);
