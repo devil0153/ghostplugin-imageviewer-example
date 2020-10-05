@@ -31,8 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ghost, Version=0.2.0.0, Culture=neutral, PublicKeyToken=f22cc87de9d6a948, processorArchitecture=MSIL">
-      <HintPath>packages\GhostPlugin.0.2.0\lib\net45\Ghost.dll</HintPath>
+    <Reference Include="Ghost, Version=0.4.0.0, Culture=neutral, PublicKeyToken=f22cc87de9d6a948, processorArchitecture=MSIL">
+      <HintPath>packages\GhostPlugin.0.4.0\lib\net45\Ghost.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
